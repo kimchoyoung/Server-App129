@@ -1,0 +1,7 @@
+---
+applications:
+- name: main_server
+  memory: 512M
+  instances: 1
+  command: npm start
+  path: ./
