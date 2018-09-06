@@ -2,7 +2,6 @@ const mongoose         = require('mongoose')
 const bodyParser  = require ('body-parser');
 
 exports.addUser =(req)=>{
-
     mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true})
     let db = mongoose.connection;
     db.on('error', () => { console.log('Connection Failed!')})
@@ -10,6 +9,7 @@ exports.addUser =(req)=>{
 
     //define Schema
     const user_define = mongoose.Schema({
+        User_id: 'number',
         email: 'string',
         pwd: 'string',
         name: 'string',

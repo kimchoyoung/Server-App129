@@ -6,8 +6,10 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "body-parser": "latest",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "ejs": "^2.6.1",
     "errorhandler": "^1.5.0",
     "express": "~4.16.0",
     "express-error-handler": "^1.1.0",
@@ -16,7 +18,9 @@
     "mongodb": "^3.1.1",
     "mongoose": "^5.2.6",
     "morgan": "~1.9.0",
+    "normalize-port": "^1.0.0",
+    "promise": "latest",
     "pug": "2.0.0-beta11",
-    "promise": "latest"
+    "request": "^2.88.0"
   }
 }
